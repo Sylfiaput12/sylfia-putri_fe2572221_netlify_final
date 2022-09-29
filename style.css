@@ -1,0 +1,131 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    overflow-x:hidden ;
+}
+
+section{
+    padding: 40px;
+}
+
+@media (max-width: 1520px) {
+    .left-svg {
+      display: none;
+    }
+  }
+
+  /* small css for the mobile nav close */
+  #nav-mobile-btn.close span:first-child {
+    transform: rotate(45deg);
+    top: 4px;
+    position: relative;
+    background: #a0aec0;
+  }
+
+  #nav-mobile-btn.close span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: 0px;
+    background: #a0aec0;
+  }
+
+/* Home */
+
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px;
+
+}
+
+.home .row{
+    padding: 10px;
+    text-align: left;
+}
+
+.home .row img{
+    vertical-align: middle;
+    
+ 
+}
+
+/* about */
+.about{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.about .row{
+    padding-left: 20px;
+}
+/* education */
+.education span{
+    color: #ff6e7f;
+}
+.education .boxes{
+    padding: 20px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    text-align: center;
+}
+
+.education .boxes .box{
+    padding: 20px;
+    display: relative;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; 
+    border-radius: 10px;
+}
+
+/* experoences */
+.experiences .boxes{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+.experiences .boxes .box{
+    padding: 30px;
+    display: relative;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; 
+    border-radius: 10px;
+}
+
+.experiences span{
+   color: #68c9fe;
+}
+
+
+/* responsove layout */
+
+@media screen and (max-width: 390px) {
+.home{
+    flex-direction: column;
+}
+.home{
+    flex: 100%;
+    max-width: 100%;
+}
+.about{
+    flex-direction:column;
+}
+
+.education .boxes .box{
+    grid-template-columns: auto;
+    padding: 10px;
+}
+}
+    
