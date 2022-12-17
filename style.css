@@ -12,13 +12,6 @@ section{
     padding: 40px;
 }
 
-@media (max-width: 1520px) {
-    .left-svg {
-      display: none;
-    }
-  }
-
-  /* small css for the mobile nav close */
   #nav-mobile-btn.close span:first-child {
     transform: rotate(45deg);
     top: 4px;
@@ -109,7 +102,7 @@ section{
 }
 
 
-/* responsove layout */
+/* responsive layout */
 
 @media screen and (max-width: 390px) {
 .home{
@@ -127,5 +120,10 @@ section{
     grid-template-columns: auto;
     padding: 10px;
 }
+@media (max-width: 1520px) {
+    .left-svg {
+      display: none;
+    }
+  }
 }
     
